@@ -1,22 +1,26 @@
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-body, html {
     margin: 0;
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 :root {
-    --sidebar-color: #4C1D95;
-    --light-text-color: #F5F3FF;
+    --main: #1992d4;
+    --light: #ffffff;
+    --accent: #f0b429;
+    --dark: #000000;
+    --background: #e2e8f0;
 }
 
 .container {
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid: min-content 1fr / min-content 1fr;
+    grid: min-content 1fr / 200px 1fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar main";
@@ -24,14 +28,22 @@ body, html {
 
 .header {
     grid-area: header;
+    background-color: var(--light);
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: var(--sidebar-color);
-    color: var(--light-text-color);
+    background-color: var(--main);
+    color: var(--light);
+    display: grid;
+    grid-template-rows: min-content 1fr 2fr;
+}
+
+.sidebar > div {
+    padding: 10px 20px;
 }
 
 .main {
     grid-area: main;
+    background-color: var(--background);
 }
