@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+.material-symbols-sharp {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
 ul {
     list-style-type: none;
 }
@@ -37,10 +45,15 @@ ul {
     color: var(--light);
     display: grid;
     grid-template-rows: min-content 1fr 2fr;
+    align-content: center;
 }
 
 .sidebar > div {
     padding: 10px 20px;
+}
+
+.branding {
+    font-size: 1.2rem;
 }
 
 .main {
