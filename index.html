@@ -7,31 +7,38 @@
     <title>Admin Dashboard</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="header-bar">
-                <form action="get">
+                <form action="get" class="search-bar">
                     <label for="search"><span class="material-symbols-sharp" aria-label="search">search</span></label>
                     <input type="search">
                 </form>
-                <span class="material-symbols-sharp" aria-label="notifications">notifications_active</span>
-                <img src="" alt="User avatar" class="avatar">
-                <div class="full-name">Morgan Oakley</div>
+                <div class="header-section">
+                    <span class="material-symbols-outlined" aria-label="notifications">notifications_active</span>
+                    <img src="" alt="User avatar" class="avatar">
+                    <div class="full-name">Morgan Oakley</div>
+                </div>
             </div>
             <div class="header-bar">
-                <img src="" alt="User avatar" class="avatar avatar--big">
-                <div class="welcome">Hello there,</div>
-                <div class="user">
-                    <div class="full-name">Morgan Oakley</div>
-                    <div class="username">@morgan</div>
-                </div>
-                <div class="header-buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+                    <div class="header-section">
+                        <img src="" alt="User avatar" class="avatar avatar--big">
+                        <div class="welcome">
+                            <div>Hello there,</div>
+                            <div class="user">
+                                <div class="full-name">Morgan Oakley</div>
+                                <div class="username">@morgan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-section">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
             </div>
         </div>
         <div class="sidebar">

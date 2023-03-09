@@ -12,6 +12,14 @@
     'opsz' 48;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 ul {
     list-style-type: none;
 }
@@ -37,6 +45,8 @@ ul {
 .header {
     grid-area: header;
     background-color: var(--light);
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 
 .sidebar {
@@ -59,4 +69,30 @@ ul {
 .main {
     grid-area: main;
     background-color: var(--background);
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 10px 40px;
+}
+
+.header-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-bar,
+.user {
+    display: flex;
+    gap: 10px;
+}
+
+.welcome,
+.search-bar,
+input[type="search"] {
+    flex: 1;
 }
