@@ -31,6 +31,7 @@ ul {
     --dark: #000000;
     --background: #e2e8f0;
     --dark-grey: #636363;
+    --shadow: #cdd2d9;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -116,6 +117,8 @@ button {
     background-color: var(--light);
     display: grid;
     grid-template-rows: 1fr 2fr;
+    box-shadow: 0 5px 5px var(--shadow);
+    position: relative;
 }
 
 .sidebar {
@@ -213,6 +216,7 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    box-shadow: 2px 5px 5px var(--shadow);
 }
 
 .project-description {
@@ -243,6 +247,7 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 2px 5px 5px var(--shadow);
 }
 
 .announcement-item:not(:last-child) {
