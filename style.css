@@ -64,6 +64,9 @@ h2 {
 
 .branding {
     font-size: 1.6rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .nav {
@@ -90,6 +93,14 @@ div.project-title {
 
 .avatar--small {
     height: 50px;
+}
+
+.icon {
+    height: 1.5rem;
+}
+
+.icon--big {
+    height: 3rem;
 }
 
 button {
