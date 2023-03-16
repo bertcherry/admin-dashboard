@@ -106,6 +106,12 @@ button {
     font-weight: 500;
 }
 
+button:hover {
+    transform: translate(-1px, -2px);
+    transition: .2s;
+    box-shadow: 1px 2px 2px var(--shadow);
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -154,6 +160,11 @@ button {
     margin: 20px 0;
 }
 
+.nav > ul > li:hover {
+    transform: translate(-1px, -2px);
+    transition: .2s;
+}
+
 .header-bar {
     display: flex;
     justify-content: space-between;
@@ -167,6 +178,11 @@ button {
     gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.hoverable:hover {
+    transform: translate(-1px, -2px);
+    transition: .2s;
 }
 
 .search-bar,
@@ -232,6 +248,12 @@ input[type="search"] {
     box-shadow: 2px 5px 5px var(--shadow);
 }
 
+.project-card:hover {
+    transform: translate(-1px,-3px);
+    transition: .2s;
+    box-shadow: 3px 8px 5px var(--shadow);
+}
+
 .project-description {
     flex: 1;
     padding-bottom: 20px;
@@ -268,10 +290,28 @@ input[type="search"] {
     padding-bottom: 20px;
 }
 
+.announcement-item:hover {
+    transform: translate(0, -1px);
+    transition: .2s;
+}
+
+.announcement-item:hover > .announcement-title {
+    text-decoration: underline;
+}
+
 .trending-item {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.trending-item:hover {
+    transform: translate(0, -1px);
+    transition: .2s;
+}
+
+.trending-item:hover > div > .project-title {
+    text-decoration: underline;
 }
 
 .trending-info {
