@@ -31,10 +31,56 @@ ul {
     --accent: #f0b429;
     --dark: #000000;
     --background: #e2e8f0;
+    --dark-grey: #636363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 h1 {
-    padding: 5px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.header-bar {
+    font-weight: 500;
+}
+
+.full-name {
+    font-size: 1.1rem;
+}
+
+.user > div {
+    font-size: 1.5rem;
+}
+
+.branding {
+    font-size: 1.6rem;
+}
+
+.nav {
+    font-size: 1.2rem;
+}
+
+.project-description,
+.announcement-excerpt,
+div.project-title {
+    color: var(--dark-grey)
+}
+
+.announcement-title {
+    font-size: 1rem;
+}
+
+.announcement-excerpt {
+    font-size: .8rem;
 }
 
 .avatar--big {
@@ -49,7 +95,7 @@ h1 {
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid: min-content 1fr / 200px 1fr;
+    grid: min-content 1fr / 250px 1fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar main";
@@ -67,16 +113,20 @@ h1 {
     background-color: var(--main);
     color: var(--light);
     display: grid;
-    grid-template-rows: min-content 1fr 2fr;
+    grid-template-rows: min-content min-content 1fr;
     align-content: center;
 }
 
 .sidebar > div {
     padding: 10px 20px;
+    font-weight: 500;
 }
 
-.branding {
-    font-size: 1.2rem;
+.nav > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .main {
@@ -94,8 +144,9 @@ h1 {
 
 .header-section {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .search-bar,
@@ -108,6 +159,13 @@ h1 {
 .search-bar,
 input[type="search"] {
     flex: 1;
+}
+
+.welcome {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
 }
 
 .main {
@@ -143,14 +201,18 @@ input[type="search"] {
 
 .project-description {
     flex: 1;
+    padding-bottom: 20px;
 }
 
 .project-icons {
     align-self: flex-end;
+    display: flex;
+    gap: 10px;
 }
 
 .announcements {
     grid-area: announcements;
+    margin-bottom: 20px;
 }
 
 .trending {
